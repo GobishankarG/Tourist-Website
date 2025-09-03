@@ -1,0 +1,875 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; font-family: 'Poppins', sans-serif; }
+
+/* Navbar */
+.navbar {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 40px; background: #fff; position: fixed; top: 0; left: 0; z-index: 1000; border-bottom: 1px solid #ddd;
+}
+.navbar .logo img { height: 50px; }
+.navbar nav ul { list-style: none; display: flex; gap: 20px; }
+.navbar nav ul li a { text-decoration: none; color: #333; font-weight: 500; padding: 6px 12px; }
+.navbar nav ul li a.active { background: #1dcaff; color: #fff; border-radius: 5px; }
+.contact-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between contact & WhatsApp */
+}
+
+.contact-btns .call-btn {
+  padding: 8px 15px;
+  background: #1dcaff;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;           /* ✅ align text like button */
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+/* hero */
+.hero-image {
+  width: 100%;
+  height: 100vh; /* full screen height */
+  overflow: hidden;
+  margin-top: 90px; /* push image down (same as navbar height) */
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+/* Destination Elements */
+.goa-photo { top: 184px; left: 615px; width: 263px; position:absolute; }
+.goa-arrow { top: 340px; left: 578px; width: 120px; position:absolute; }
+.goa-label { top: 406px; left: 564px; width: 100px; position:absolute; }
+.kerala-photo { top: 517px; left: -2px; width: 200px; position:absolute; }
+.kerala-arrow { top: 750px; left: 54px; width: 110px; position:absolute; }
+.kerala-label { top: 836px; left: 139px; width: 120px; position:absolute; }
+.karnataka-photo { top: 202px; left: 1203px; width: 280px; position:absolute; }
+.karnataka-arrow { top: 337px; left: 1140px; width: 140px; position:absolute; }
+.karnataka-label { top: 417px; left: 1109px; width: 150px; position:absolute; }
+.tamil-photo { top: 585px; left: 1468px; width: 220px; position:absolute; }
+.tamil-arrow { top: 676px; left: 1375px; width: 160px; position:absolute; }
+.tamil-label { top: 759px; left: 1341px; width: 150px; position:absolute; }
+.north-photo { top: 843px; left: 252px; width: 300px; position:absolute; }
+.north-arrow { top: 965px; left: 475px; width: 160px; position:absolute; }
+.north-label { top: 994px; left: 608px; width: 160px; position:absolute; }
+
+/* About */
+.about { display: flex; justify-content: space-between; align-items: center; padding: 100px 60px; gap: 40px; background: #fff; margin-top: 80px; }
+.about-text { flex: 1; padding-right: 40px; }
+.about-text .label { font-size: 16px; font-weight: 600; color: #0077b6; margin-bottom: 15px; display: block; }
+.about-text h2 { font-size: 36px; font-weight: 700; margin-bottom: 20px; line-height: 1.3; }
+.about-text p { font-size: 18px; line-height: 1.8; color: #333; max-width: 600px; }
+.about-images { flex: 1; position: relative; display: flex; justify-content: flex-end; align-items: center; }
+.about-images .img-back { width: 75%; border-radius: 18px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); position: relative; z-index: 1; }
+.about-images .img-front { width: 50%; border-radius: 15px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); position: absolute; bottom: -55px; left: 0; z-index: 2; }
+
+/* Stats */
+.stats { display: flex; justify-content: center; gap: 80px; padding: 40px; background: #fafafa; }
+.stats h3 { font-size: 32px; color: #0fa5be; }
+
+.services {
+  position: relative;
+  background: url("assets/services-bg.png") center/cover no-repeat;
+  padding: 80px 40px;
+  color: #fff;
+}
+
+.services-overlay {
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.services p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.service-item img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Destinations Section */
+.destinations {
+  padding: 60px 20px;
+  background: #0fa5be;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.destinations .label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.destinations h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollInfinite 40s linear infinite;
+}
+
+@keyframes scrollInfinite {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Destination Card */
+.destination-card {
+  position: relative;
+  min-width: 260px;
+  height: 380px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.destination-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Frosted Glass Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.12); /* slightly lighter */
+  backdrop-filter: blur(1.5px); /* reduced blur */
+  -webkit-backdrop-filter: blur(4px);
+  color: #fff;
+  text-align: left;
+}
+
+
+.card-overlay h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-overlay p {
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+/* ✅ Fix WhatsApp button inside destination cards */
+.card-overlay .whatsapp-btn {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  padding: 8px 20px;    /* fixed padding */
+  border: 2px solid #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;  /* prevent text from breaking */
+  transition: all 0.3s ease;
+}
+
+
+.card-overlay .whatsapp-btn:hover {
+  background: #25D366;           /* green background on hover */
+  border-color: #25D366;
+  color: #fff;
+}
+
+
+
+
+/* Days */
+.days {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.days span {
+  margin: 0 10px;
+  padding: 6px 12px;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #0fa5be;
+  font-weight: 600;
+}
+
+/* Days Bar */
+.days { margin-top: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.days span { background: #fff; color: #0fa5be; padding: 8px 16px; border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+.days span:hover { background: #ffd700; color: #333; }
+
+/* Packages Auto Scroll */
+.packages {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+.packages-scroll {
+  overflow: hidden;
+  margin: 30px 0;
+}
+.packages-scroll .scroll-track {
+  display: flex;
+  gap: 20px;
+  animation: scrollInfinite 40s linear infinite;
+}
+.package-card {
+  min-width: 220px;
+  height: 350px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  text-align: center;
+  padding-bottom: 15px;
+}
+.package-card img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+.package-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.package-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #0fa5be;
+  font-weight: 600;
+}
+.package-card button {
+  background: #0fa5be;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.package-card button:hover {
+  background: #007a89;
+}
+
+/* Testimonials */
+.testimonials { padding: 60px 20px; background: #fafafa; text-align: center; overflow: hidden; }
+.testimonials h2 { margin-bottom: 30px; font-size: 28px; font-weight: 700; }
+.testimonial-scroll { display: flex; gap: 20px; animation: scrollTestimonials 50s linear infinite; }
+.testimonial { min-width: 280px; max-width: 280px; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: left; }
+.testimonial p { font-size: 14px; margin-bottom: 10px; }
+.testimonial h4 { font-size: 14px; color: #0fa5be; margin-bottom: 5px; }
+.stars { color: #ffd700; font-size: 14px; }
+@keyframes scrollTestimonials { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* Contact Section */
+.contact {
+  position: relative;
+  background: url("assets/contact-bg.jpg") center/cover no-repeat;
+  padding: 80px 40px;
+  color: #fff;
+  text-align: center;
+}
+.contact h2 { font-size: 32px; font-weight: 700; margin-bottom: 40px; }
+.contact h2 span { color: #ffd700; }
+.contact-content { display: flex; justify-content: space-between; align-items: flex-start; gap: 60px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; text-align: left; }
+.contact-info { flex: 1; font-size: 16px; line-height: 1.8; }
+.contact-info h3 { margin-bottom: 15px; font-size: 18px; font-weight: 600; }
+.contact-info p { margin-bottom: 10px; }
+.contact-info i { margin-right: 8px; color: #ffd700; }
+.contact-form { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+.contact-form input, .contact-form textarea, .contact-form button { padding: 12px; border: none; border-radius: 6px; font-size: 16px; }
+.contact-form input, .contact-form textarea { width: 100%; }
+.contact-form textarea { min-height: 100px; resize: vertical; }
+.contact-form button { background: #ffd700; color: #333; font-weight: bold; cursor: pointer; transition: background 0.3s ease; }
+.contact-form button:hover { background: #f1c40f; }
+
+/* Footer */
+.footer { background: #0fa5be; color: #fff; text-align: center; padding: 20px; }
+.footer .copy { font-size: 14px; }
+
+/* make-travel-easy */
+.make-travel-easy {
+  background: url("assets/wemakebg.png") no-repeat center center;
+  background-size: cover;   /* ✅ makes the image cover the whole section */
+  padding: 80px 50px;
+}
+
+.make-travel-easy .container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading */
+.make-travel-easy .section-heading {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.make-travel-easy .section-heading small {
+  color: #0fa5be;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.make-travel-easy .section-heading h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Content Layout */
+.make-travel-easy .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Image grid */
+.make-travel-easy .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.make-travel-easy .images img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Checklist */
+.make-travel-easy .text {
+  padding-left: 40px; /* ✅ move right to fill empty space */
+}
+
+.make-travel-easy .text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.make-travel-easy .text ul li {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px; /* ✅ reduced gap between lines */
+}
+
+.make-travel-easy .text ul li:last-child {
+  margin-bottom: 0;
+}
+
+.make-travel-easy .text ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Checklist with tick image */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.checklist li img {
+  width: 22px;
+  height: 22px;
+}
+
+
+/* Travel Memories Section */
+.gallery {
+  padding: 100px 20px 60px;   /* 🔹 extra top spacing */
+  text-align: center;
+  background: #fff;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0fa5be;
+  margin: 20px 0 10px;
+}
+
+.gallery p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Carousel Wrapper */
+.gallery-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 30px;
+  animation: scrollGallery 60s linear infinite; /* 🔹 smoother, slower scroll */
+  margin: 40px 0;
+}
+
+.gallery-track img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  transform: scale(1.15) rotate(-4deg);  /* 🔹 zoomed in to reduce white gaps */
+  transition: transform 0.3s ease;
+}
+
+.gallery-track img:nth-child(even) {
+  transform: scale(1.15) rotate(4deg);
+}
+
+.gallery-track img:hover {
+  transform: scale(1.25) rotate(0deg);
+}
+
+/* Infinite Scroll Effect */
+@keyframes scrollGallery {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* 🔹 half track (since images duplicated) */
+}
+
+/* Optional: Pause on Hover */
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+/* 🔹 Center Happy Guests Text + Button */
+.gallery-footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.gallery-footer h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0fa5be;
+  margin-bottom: 10px;
+}
+
+.gallery-footer p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.gallery-footer .btn {
+  padding: 12px 24px;
+  background: #0fa5be;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery-footer .btn:hover {
+  background: #007a8a;
+}
+
+/* Footer */
+.footer {
+  background: #0fa5be;
+  color: #fff;
+  padding: 50px 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Logo / Image */
+.footer-logo img {
+  max-width: 200px;
+  border-radius: 6px;
+  background: #fff;
+  padding: 5px;
+}
+
+/* Quick Links */
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Info */
+.footer-contact p {
+  margin: 8px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-contact i {
+  color: #ffd700;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+/* Brush */
+.brush-divider-css {
+  position: relative;
+  width: 100%;
+  height: 5px;  /* reduced height */
+  background: #0fa5be; /* footer background color */
+  clip-path: polygon(
+    0 100%, 50% 85%, 95% 95%, 
+    50% 80%, 70% 95%, 85% 85%, 
+    100% 100%, 100% 100%, 0% 100%
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Small Devices (Mobile) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: flex-start;
+  }
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-btns {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .hero-image {
+    height: 60vh; /* reduce hero size for small screens */
+  }
+  .about {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .about-text {
+    padding-right: 0;
+  }
+  .about-images {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .scroll-track, .packages-scroll .scroll-track {
+    animation-duration: 25s; /* faster for mobile */
+  }
+  .testimonial-scroll {
+    animation-duration: 30s;
+  }
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+/* Medium Devices (Tablet) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+  .about-images {
+    margin-top: 25px;
+    justify-content: center;
+  }
+  .stats {
+    gap: 40px;
+  }
+  .destination-card {
+    min-width: 200px;
+    height: 300px;
+  }
+  .package-card {
+    min-width: 180px;
+    height: 300px;
+  }
+  .contact-content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+/* Large Devices (Desktop, Mac) */
+@media (min-width: 1025px) {
+  .navbar {
+    padding: 15px 60px;
+  }
+  .about {
+    flex-direction: row;
+    padding: 100px 80px;
+    text-align: left;
+  }
+  .stats {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/* ✅ WhatsApp button style for destination cards */
+.whatsapp-card-btn {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  padding: 8px 20px;         /* balanced size */
+  border: 2px solid #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-card-btn:hover {
+  background: #25D366;
+  border-color: #25D366;
+  color: #fff;
+}
+/* Hamburger button - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* Mobile Nav */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar nav ul {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    border-top: 1px solid #ddd;
+  }
+
+  .navbar nav ul.show {
+    display: flex; /* show when toggled */
+  }
+
+  .hamburger {
+    display: flex; /* show hamburger only on mobile */
+  }
+}
+/* Fix Make Travel Easy layout on mobile */
+@media (max-width: 600px) {
+  .make-travel-easy .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Image grid: 2 per row */
+  .make-travel-easy .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .make-travel-easy .images img {
+    width: 100%;
+    height: 140px; /* smaller height for mobile */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Checklist moves below images */
+  .make-travel-easy .text {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .make-travel-easy .text ul li {
+    font-size: 16px;
+  }
+}
+/* Default (desktop/tablet) */
+.hero-image img {
+  content: url("assets/hero.png");
+}
+
+/* Mobile view (≤600px) */
+@media (max-width: 600px) {
+  .hero-image img {
+    content: url("assets/hero-mobile.png"); /* 👈 your new mobile-only image */
+  }
+}

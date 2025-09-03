@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SouthScape - Travel with Us</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo"> 
+      <img src="assets/logo.png" alt="Southscape Logo"> 
+    </div>
+    <nav>
+  <ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#services">Services</a></li>
+  </ul>
+</nav>
+    <div class="contact-btns">
+  <a href="tel:+919976646988" class="call-btn">Contact</a>
+  <a href="https://wa.link/ahw3cc" target="_blank" class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
+
+    <!-- Hamburger Menu Button (Visible on Mobile) -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  </header>
+
+  <!-- Hero Section (Full Image) -->
+<section class="hero-image">
+  <img src="assets/hero.png" alt="SouthScape Hero">
+</section>
+
+
+  <!-- About -->
+   <div id="about"></div>
+  <section class="about">
+    <div class="about-text">
+      <p class="label">Explore the world with us, one adventure at a time.</p>
+      <h2>Discover South India with Us</h2>
+      <p>
+        We are your trusted South Indian travel partner,
+        offering curated tour packages across Kerala,
+        Karnataka, Tamil Nadu, Goa, Hyderabad, and beyond.
+        With local expertise and affordable plans, we ensure unforgettable journeys.
+      </p>
+    </div>
+    <div class="about-images">
+      <img src="assets/about1.png" alt="Kerala Landscape" class="img-back">
+      <img src="assets/about2.png" alt="Houseboat in Kerala" class="img-front">
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div><h3>10k+</h3><p>Success Trips</p></div>
+    <div><h3>200k+</h3><p>Happy Clients</p></div>
+    <div><h3>80+</h3><p>Packages</p></div>
+  </section>
+  
+<!-- Sections -->
+  <section class="make-travel-easy">
+  <div class="container">
+    <!-- Heading -->
+    <div class="section-heading">
+      <small>Let us help you plan your next adventure</small>
+      <h2>We Make Travel Easy</h2>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Left Images -->
+      <div class="images">
+        <img src="assets/travel1.png" alt="Travel 1">
+        <img src="assets/travel2.png" alt="Travel 2">
+        <img src="assets/travel3.png" alt="Travel 3">
+        <img src="assets/travel4.png" alt="Travel 4">
+      </div>
+
+      <!-- Right Checklist -->
+      <div class="text">
+        <ul>
+          <li><img src="assets/tick.png" alt="✔"> Trusted Local Experts</li>
+          <li><img src="assets/tick.png" alt="✔"> Affordable Packages</li>
+          <li><img src="assets/tick.png" alt="✔"> Customized Trips</li>
+          <li><img src="assets/tick.png" alt="✔"> 24/7 Support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Destinations -->
+   <div id="destinations"></div>
+<section class="destinations">
+  <span class="label">Explore the World with Us!</span>
+  <h2>Discover South India & Beyond</h2>
+
+  <div class="scroll-container">
+    <div class="scroll-track">
+      <!-- Original Set (6 cards) -->
+      <div class="destination-card">
+        <img src="assets/tamilnadudes.png" alt="Tamil Nadu">
+        <div class="card-overlay">
+          <h3>Tamil Nadu</h3>
+          <p>Temples, hill stations, and coastal beauty</p>
+          <a href="https://wa.link/lbmbjh" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/keralades.png" alt="Kerala">
+        <div class="card-overlay">
+          <h3>Kerala</h3>
+          <p>God's Own Country – from beaches to backwaters</p>
+          <a href="https://wa.link/1rj6ej" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/karnatakades.png" alt="Karnataka">
+        <div class="card-overlay">
+          <h3>Karnataka</h3>
+          <p>Palaces, forests, and historic wonders</p>
+          <a href="https://wa.link/w3ama8" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/hyderabaddes.png" alt="Hyderabad">
+        <div class="card-overlay">
+          <h3>Hyderabad</h3>
+          <p>Temples, hill stations, and coastal beauty</p>
+          <a href="https://wa.link/wgsbjt" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/goades.png" alt="Goa">
+        <div class="card-overlay">
+          <h3>Goa</h3>
+          <p>Sun, sand, and vibrant nightlife</p>
+          <a href="https://wa.link/dt5tq9" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/northindiades.png" alt="North India">
+        <div class="card-overlay">
+          <h3>North India</h3>
+          <p>Golden Triangle & Himalayan adventures</p>
+          <a href="https://wa.link/kcjlta" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Duplicate Set (6 cards) -->
+      <div class="destination-card">
+        <img src="assets/tamilnadudes.png" alt="Tamil Nadu">
+        <div class="card-overlay">
+          <h3>Tamil Nadu</h3>
+          <p>Temples, hill stations, and coastal beauty</p>
+          <a href="https://wa.link/lbmbjh" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/keralades.png" alt="Kerala">
+        <div class="card-overlay">
+          <h3>Kerala</h3>
+          <p>God's Own Country – from beaches to backwaters</p>
+          <a href="https://wa.link/1rj6ej" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/karnatakades.png" alt="Karnataka">
+        <div class="card-overlay">
+          <h3>Karnataka</h3>
+          <p>Palaces, forests, and historic wonders</p>
+          <a href="https://wa.link/w3ama8" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/hyderabaddes.png" alt="Hyderabad">
+        <div class="card-overlay">
+          <h3>Hyderabad</h3>
+          <p>Temples, hill stations, and coastal beauty</p>
+          <a href="https://wa.link/wgsbjt" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/goades.png" alt="Goa">
+        <div class="card-overlay">
+          <h3>Goa</h3>
+          <p>Sun, sand, and vibrant nightlife</p>
+          <a href="https://wa.link/dt5tq9" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="destination-card">
+        <img src="assets/northindiades.png" alt="North India">
+        <div class="card-overlay">
+          <h3>North India</h3>
+          <p>Golden Triangle & Himalayan adventures</p>
+          <a href="https://wa.link/kcjlta" target="_blank" class="whatsapp-card-btn">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="days">
+    <span>1N/2D</span>
+    <span>2N/3D</span>
+    <span>4N/5D</span>
+    <span>5N/6D</span>
+    <span>Custom Days</span>
+  </div>
+</section>
+
+  <!-- Packages -->
+   <div id="packages"></div>
+  <section class="packages">
+  <span class="label">Explore Destinations Across the Globe!</span>
+  <h2>Our Popular Tour Packages</h2>
+
+  <div class="packages-scroll">
+    <div class="scroll-track">
+      <!-- Original Set -->
+      <div class="package-card">
+        <img src="assets/pkg1.png" alt="Tamil Nadu">
+        <h3>Tamil Nadu</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg2.png" alt="Kerala">
+        <h3>Kerala</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg3.png" alt="Karnataka">
+        <h3>Karnataka</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg4.png" alt="Hyderabad">
+        <h3>Hyderabad</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg5.png" alt="Goa">
+        <h3>Goa</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg6.png" alt="North India">
+        <h3>North India</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+
+      <!-- Duplicate Set (for seamless scroll) -->
+      <div class="package-card">
+        <img src="assets/pkg1.png" alt="Tamil Nadu">
+        <h3>Tamil Nadu</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg2.png" alt="Kerala">
+        <h3>Kerala</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg3.png" alt="Karnataka">
+        <h3>Karnataka</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg4.png" alt="Hyderabad">
+        <h3>Hyderabad</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg5.png" alt="Goa">
+        <h3>Goa</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+      <div class="package-card">
+        <img src="assets/pkg6.png" alt="North India">
+        <h3>North India</h3>
+        <p>Explore the Nature</p>
+        <button>View Packages</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sections -->
+ <div id="services"></div>
+<section class="services">
+  <div class="services-content">
+    <p><b>Our Service</b></p>
+    <h2>We Arrange Everything For You!</h2>
+    <p>We offer complete travel solutions to make your journey smooth, comfortable, and memorable.</p>
+
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="assets/car.png" alt="Car & Bus Service">
+        <span>From 4-seater cars to 54-seater buses</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/tickets.png" alt="Tickets">
+        <span>Bus, Train & Flight Tickets</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/documents.png" alt="Documents">
+        <span>Support for travel documents and processing</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/adventure.png" alt="Adventure">
+        <span>Adventure-filled experiences in nature</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/campfire.png" alt="Campfire">
+        <span>Relaxing evenings with campfires and music</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/hotel.png" alt="Hotel">
+        <span>Stay options that fit every budget and preference</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/dining.png" alt="Dining">
+        <span>Delicious local and multi-cuisine dining experiences</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/trip.png" alt="Trips">
+        <span>Thrilling trips through hills, forests, and off-beat paths</span>
+      </div>
+      <div class="service-item">
+        <img src="assets/music.png" alt="Music">
+        <span>Music, fun, and cultural shows for special trips</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Scrolling Image Row -->
+   <div id="gallery"></div>
+<section class="gallery">
+  <h4>TRAVEL MEMORIES</h4>
+  <h2>Discover the beauty, culture, and experiences we bring to life.</h2>
+
+  <div class="gallery-wrapper">
+    <div class="gallery-track">
+      <!-- Original 15 images -->
+      <img src="assets/guest1.png" alt="">
+      <img src="assets/guest2.png" alt="">
+      <img src="assets/guest3.png" alt="">
+      <img src="assets/guest4.png" alt="">
+      <img src="assets/guest5.png" alt="">
+      <img src="assets/guest6.png" alt="">
+      <img src="assets/guest7.png" alt="">
+      <img src="assets/guest8.png" alt="">
+      <img src="assets/guest9.png" alt="">
+      <img src="assets/guest10.png" alt="">
+      <img src="assets/guest11.png" alt="">
+      <img src="assets/guest12.png" alt="">
+      <img src="assets/guest13.png" alt="">
+      <img src="assets/guest14.png" alt="">
+      <img src="assets/guest15.png" alt="">
+
+      <!-- Duplicate 15 images for seamless scroll -->
+      <img src="assets/guest1.png" alt="">
+      <img src="assets/guest2.png" alt="">
+      <img src="assets/guest3.png" alt="">
+      <img src="assets/guest4.png" alt="">
+      <img src="assets/guest5.png" alt="">
+      <img src="assets/guest6.png" alt="">
+      <img src="assets/guest7.png" alt="">
+      <img src="assets/guest8.png" alt="">
+      <img src="assets/guest9.png" alt="">
+      <img src="assets/guest10.png" alt="">
+      <img src="assets/guest11.png" alt="">
+      <img src="assets/guest12.png" alt="">
+      <img src="assets/guest13.png" alt="">
+      <img src="assets/guest14.png" alt="">
+      <img src="assets/guest15.png" alt="">
+    </div>
+  </div>
+
+  <div class="gallery-footer">
+    <h2>Happy Guests</h2>
+    <p>Smiles and moments from our traveler’s journeys.</p>
+    <button class="btn">View More on Instagram</button>
+  </div>
+</section>
+
+
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonial-scroll">
+      <div class="testimonial"><p>Our students had a memorable trip to Munnar. The arrangements were smooth, safe, and enjoyable. Highly recommended for school excursions.</p><h4>Mrs.Kavitha (VVCR Girls school Principal, Erode)</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>The college tour to Coorg and Mysuru was well-organized. Accommodation, food, and transport were excellent. A hassle-free experience.</p><h4>Kokila MMC Chennai</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>I enjoyed the cultural and historical trip to Hampi. The team gave us complete support and guidance throughout.</p><h4>Rohith PSG coimbatore</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>We took our students to Ooty. The stay, trekking, and sightseeing were perfectly planned. Truly unforgettable.</p><h4>Nandha pharmacy Erode Elavarasan</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>Our college industrial visit to Kochi and Alappuzha was not just fun but also informative. Great service and punctual team.</p><h4>B.ed college Komarapalayam</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>The Kerala backwaters tour was amazing. Students enjoyed boating and exploring the culture. Safety was well taken care of.</p><h4>Nandha Arts College Priya</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>Camping and trekking in Wayanad gave our students a refreshing break. Everything from travel to food was professionally arranged.</p><h4>Azar Erode arts college</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>Our annual trip to Kodaikanal was a grand success. Comfortable bus, safe stay, and tasty food made it wonderful for all students.</p><h4>Lohith JKKN college of arts and science</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>The Hyderabad tour was exciting. Students loved Ramoji Film City and Charminar. Excellent guidance from your tour team.</p><h4>Mr. Senthil Amman arts college principal</h4><div class="stars">★★★★★</div></div>
+      <div class="testimonial"><p>Our Goa trip was unforgettable. From beach activities to cultural exploration, everything was planned beautifully.</p><h4>Mr. Aravindh Vasavi arts and scum college</h4><div class="stars">★★★★★</div></div>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<section class="contact">
+  <h2>Plan <span>Your Trip Today!</span></h2>
+  <div class="contact-content">
+    
+    <!-- Left Info -->
+    <div class="contact-info">
+      <h3>Stay Connected</h3>
+      <p><i class="fa fa-phone"></i> +91 99766 46988</p>
+      <p><i class="fa fa-envelope"></i> skavinkumarttm@gmail.com</p>
+    </div>
+
+    <!-- Right Form -->
+    <form action="https://formspree.io/f/xzzajong" method="POST" class="contact-form">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="phone" placeholder="Contact Number" required pattern="[0-9]{10}">
+  <textarea name="message" placeholder="Message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+
+  </div>
+</section>
+
+<!-- Add Brush Divider Here -->
+<div class="brush-divider-css"></div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo / Image -->
+    <div class="footer-logo">
+      <img src="assets/logo.png" alt="Why Not Tour Logo">
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fa fa-phone"></i> +91 99766 46988</p>
+      <p><i class="fa fa-envelope"></i> skavinkumarttm@gmail.com</p>
+      <p><i class="fa fa-map-marker"></i> No 4, Sri Ranga street, Near<br>
+         VVCR girls hr sec school,<br>
+         Erode - 638001</p>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>Copyright© 2025 WHY NOT TOUR.</p>
+    <p>Trusted Travel & Tour Services. All Rights Reserved.</p>
+  </div>
+</footer>
+<script>
+function toggleMenu() {
+  document.querySelector(".navbar nav ul").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
